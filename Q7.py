@@ -2,7 +2,7 @@ def calculate(number, board):
     for i in board:
         for j in range(len(i)):
             if i[j] == number:
-                i[j] = 'x'  
+                i[j] = 'x'
 
 
 def sumofunmarked(board):
@@ -18,14 +18,14 @@ def sumofunmarked(board):
 def check_win(board):
     win = False
 
-    #check -
+    # check -
     for i in board:
         win = all(ele in ['x'] for ele in i)
 
         if win:
             return win
 
-    #check |
+    # check |
     for i in range(5):
         win = all(ele[i] in ['x'] for ele in board)
 
@@ -35,7 +35,7 @@ def check_win(board):
     return win
 
 
-if __name__ == '__main__':   
+if __name__ == '__main__':
     with open('q7input.in') as f:
         ran_num, *tables = f.read().split('\n\n')
 
@@ -45,7 +45,6 @@ if __name__ == '__main__':
     for number in ran_num:
         for board in tables:
             calculate(number, board)
-            
             if check_win(board):
                 print(number * sumofunmarked(board))
-                break
+                exit()
