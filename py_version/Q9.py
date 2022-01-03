@@ -52,7 +52,7 @@ def main(data):
 
 
 if __name__ == '__main__':
-    with open('q9input.in') as f:
+    with open('../input/q9input.in') as f:
         data = f.read()
         data = re.split(r' -> |\n', data)
 
