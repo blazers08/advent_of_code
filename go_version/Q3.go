@@ -19,7 +19,7 @@ func read_input(fname string) ([]Pair, error) {
 		return nil, err
 	}
 
-	data := strings.Split(string(datas), "\r\n")
+	data := strings.Split(string(datas), "\n")
 	cleaned_data := []Pair{}
 
 	for _, val := range data {

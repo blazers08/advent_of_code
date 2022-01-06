@@ -32,7 +32,7 @@ func read_input(fname string) ([]int, error) {
 		return nil, err
 	}
 
-	data := strings.Split(string(datas), "\r\n")
+	data := strings.Split(string(datas), "\n")
 	numbers := make([]int, 0, len(data))
 
 	for _, ele := range data {
