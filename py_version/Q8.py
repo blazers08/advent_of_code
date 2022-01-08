@@ -36,7 +36,7 @@ def check_win(board):
 
 
 if __name__ == '__main__':
-    with open('input/q7input.in') as f:
+    with open('../input/q7input.in') as f:
         ran_num, *tables = f.read().split('\n\n')
 
     ran_num = [int(i) for i in ran_num.split(',')]

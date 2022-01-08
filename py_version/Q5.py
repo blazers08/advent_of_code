@@ -20,6 +20,6 @@ def diagno(report):
 
 
 if __name__ == '__main__':
-    with open('input/q5input.in') as f:
+    with open('../input/q5input.in') as f:
         report = f.read().split('\n')
     print(diagno(report))

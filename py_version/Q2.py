@@ -19,6 +19,6 @@ def detect(depthreport):
 
 
 if __name__ == "__main__":
-    with open('input/q1input.in') as f:
+    with open('../input/q1input.in') as f:
         report = [int(i) for i in f.read().split('\n')]
     print(detect(report))

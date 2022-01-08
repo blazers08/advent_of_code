@@ -15,6 +15,6 @@ def moving(plan):
 
 
 if __name__ == '__main__':
-    with open('input/q3input.in') as f:
+    with open('../input/q3input.in') as f:
         plan = [tuple(i.split(' ')) for i in f.read().split('\n')]
     print(moving(plan))
